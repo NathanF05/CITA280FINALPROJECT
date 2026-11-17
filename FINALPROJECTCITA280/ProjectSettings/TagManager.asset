@@ -6,6 +6,7 @@ TagManager:
   tags:
   - dirt
   - Canvas
+  - Hose(Dirt Remover)
   layers:
   - Default
   - TransparentFX
