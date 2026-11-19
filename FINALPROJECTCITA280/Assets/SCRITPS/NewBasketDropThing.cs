@@ -4,6 +4,11 @@ using UnityEngine.EventSystems;
 public class NewBasketDropThing : MonoBehaviour, IDropHandler
 {
     private int veggieCounter = 0;
+
+    public int vegetableNum1;
+    public int vegetableNum2;
+    public int vegetableNum3;
+
     public GameObject blocker1;
     public GameObject blocker2;
 
@@ -15,15 +20,15 @@ public class NewBasketDropThing : MonoBehaviour, IDropHandler
             Destroy(dragRect.gameObject);
             veggieCounter++;
 
-            if (veggieCounter == 2)
+            if (veggieCounter == vegetableNum1)
             {
                 Destroy(blocker1);
             }
-            else if (veggieCounter == 4)
+            else if (veggieCounter == (vegetableNum1 + vegetableNum2))
             {
                 Destroy(blocker2);
             }
-            else if(veggieCounter>= 6)
+            else if(veggieCounter == (vegetableNum1 + vegetableNum2 + vegetableNum3))
             {
                 print("ALL VEGETABLES COLLECTED!");
             }
