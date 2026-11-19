@@ -232,8 +232,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 305.98, y: 25.354}
-  m_SizeDelta: {x: 329.96, y: 248.23}
+  m_AnchoredPosition: {x: 302.19, y: 26.758}
+  m_SizeDelta: {x: 322.39, y: 245.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &109537160
 MonoBehaviour:
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.08627451}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.06666667}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -307,7 +307,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 286, y: 9}
+  m_AnchoredPosition: {x: 286, y: 8.999996}
   m_SizeDelta: {x: 250.1, y: 67.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &172585707
@@ -383,7 +383,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 297, y: 39.531}
+  m_AnchoredPosition: {x: 286, y: 39.531006}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &258756665
@@ -470,7 +470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -306, y: 28.161}
+  m_AnchoredPosition: {x: -314.00995, y: 8.999996}
   m_SizeDelta: {x: 250.1, y: 67.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &422627966
@@ -522,6 +522,7 @@ GameObject:
   - component: {fileID: 583606912}
   - component: {fileID: 583606914}
   - component: {fileID: 583606913}
+  - component: {fileID: 583606915}
   m_Layer: 5
   m_Name: Onion
   m_TagString: Untagged
@@ -545,7 +546,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 191, y: 44.531}
+  m_AnchoredPosition: {x: 203, y: 44.531}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &583606913
@@ -586,6 +587,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583606911}
   m_CullTransparentMesh: 1
+--- !u!114 &583606915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583606911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a738d4cfc302b4400951f9a158cfebfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DragDrop
 --- !u!1 &688052427
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,7 +634,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 391, y: 39.531}
+  m_AnchoredPosition: {x: 371, y: 39.531}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &688052429
@@ -784,7 +797,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 70, y: 44.531}
+  m_AnchoredPosition: {x: 59, y: 44.531}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &833459360
@@ -1009,7 +1022,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -297, y: 72}
+  m_AnchoredPosition: {x: -314.00995, y: 49.99997}
   m_SizeDelta: {x: 76.1855, y: 154.9379}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1323236448
@@ -1097,7 +1110,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00000023842, y: 39.531}
+  m_AnchoredPosition: {x: -17, y: 44.531}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1520210448
@@ -1185,7 +1198,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -82, y: 50}
+  m_AnchoredPosition: {x: -100, y: 44.531006}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1546492614
@@ -1288,6 +1301,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73579482f924a1d4abedc53d40449aa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewBasketDropThing
+  vegetableNum1: 3
+  vegetableNum2: 3
+  vegetableNum3: 3
   blocker1: {fileID: 2064402239}
   blocker2: {fileID: 109537158}
 --- !u!114 &1640531155
@@ -1363,7 +1379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -363, y: 72}
+  m_AnchoredPosition: {x: -395, y: 50}
   m_SizeDelta: {x: 76.1855, y: 154.9379}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1651693644
@@ -1451,7 +1467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -243.91, y: 67}
+  m_AnchoredPosition: {x: -227.05, y: 50}
   m_SizeDelta: {x: 76.1855, y: 154.9379}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663655998
@@ -1538,7 +1554,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13, y: 9}
+  m_AnchoredPosition: {x: -23.97998, y: 8.999996}
   m_SizeDelta: {x: 250.1, y: 67.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1675023095
@@ -1730,8 +1746,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23.980011, y: 28.16101}
-  m_SizeDelta: {x: 329.96, y: 248.23}
+  m_AnchoredPosition: {x: -23.983, y: 26.757}
+  m_SizeDelta: {x: 329.95, y: 245.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2064402241
 MonoBehaviour:
