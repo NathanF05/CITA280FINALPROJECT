@@ -12,6 +12,7 @@ public class DragDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
   public void OnBeginDrag(PointerEventData eventData) {
     // make transparent 
     image.color = new Color32(255, 255, 255, 170);
+    
   } // end OnBeginDrag
 
   public void OnDrag(PointerEventData eventData) {

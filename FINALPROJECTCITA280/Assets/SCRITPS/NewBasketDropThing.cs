@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class NewBasketDropThing : MonoBehaviour, IDropHandler
 {
@@ -12,11 +13,16 @@ public class NewBasketDropThing : MonoBehaviour, IDropHandler
     public GameObject blocker1;
     public GameObject blocker2;
 
+    public AudioClip vegetableCollectedSound;
+
+    private MusicManager musicManagerObj;
+
     public void OnDrop(PointerEventData eventData) {
         if(eventData.pointerDrag != null) {
             RectTransform dragRect = eventData.pointerDrag.GetComponent<RectTransform>();
             dragRect.anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
 
+            gameObject.GetComponent<AudioSource>().Play();
             Destroy(dragRect.gameObject);
             veggieCounter++;
 
@@ -30,10 +36,26 @@ public class NewBasketDropThing : MonoBehaviour, IDropHandler
             }
             else if(veggieCounter == (vegetableNum1 + vegetableNum2 + vegetableNum3))
             {
-                print("ALL VEGETABLES COLLECTED!");
+                if(SceneManager.GetActiveScene().name == "Final (Above Ground)")
+                {
+                    SceneManager.LoadScene("Final (Below Ground)");
+                }
+                else if(SceneManager.GetActiveScene().name == "Final (Below Ground)")
+                {
+                    //Go to cooking scene
+                    print("Garden Minigame Done!");
+                    musicManagerObj.stopMusic();
+                }
             }
 
             Debug.Log("Item dropped to basket");
         } // check if drag
     } // end OnDrop
+
+    void Awake()
+    {
+        if (GameObject.FindWithTag("MusicManager") != null){
+               musicManagerObj = GameObject.FindWithTag("MusicManager").GetComponent<MusicManager>();
+          }
+    }
 }

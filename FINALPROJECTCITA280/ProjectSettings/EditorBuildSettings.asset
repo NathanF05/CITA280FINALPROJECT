@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/SCENES/Final (Above Ground).unity
+    guid: 39430f6a42e055b4c9308738c1d96604
+  - enabled: 1
     path: Assets/SCENES/Final (Below Ground).unity
     guid: dc8d2a606d56709418c8572fe937232c
   m_configObjects:
