@@ -27,9 +27,9 @@ public class NewDragDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     } // end OnBeginDrag
 
     public void OnDrag(PointerEventData eventData) {
-        rectTransform.anchoredPosition += eventData.delta;
+       //rectTransform.anchoredPosition += eventData.delta;
 
-        // transform.position = Input.mousePosition;
+        transform.position = Input.mousePosition;
     } // end OnDrag
 
     public void OnEndDrag(PointerEventData eventData) {
