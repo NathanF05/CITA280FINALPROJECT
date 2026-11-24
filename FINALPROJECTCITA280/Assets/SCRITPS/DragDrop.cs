@@ -12,23 +12,28 @@ public class DragDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
   public void OnBeginDrag(PointerEventData eventData) {
     // make transparent 
     image.color = new Color32(255, 255, 255, 170);
+    //<<<<<<< HEAD
+
+    //=======
     
+    //>>>>>>> 7ca981f44475b517228e58aa3e047d3446f6402d
   } // end OnBeginDrag
 
   public void OnDrag(PointerEventData eventData) {
     rectTransform.anchoredPosition += eventData.delta;
 
-    // transform.position = Input.mousePosition;
   } // end OnDrag
 
   public void OnEndDrag(PointerEventData eventData) {
     // default color
     image.color = new Color(255, 255, 255, 255);
+
   } // end OnEndDrag
 
   void Start() {
     rectTransform = GetComponent<RectTransform>();
     image = GetComponent<Image>();
+
   } // end Start
 
 } // end DragDrop
